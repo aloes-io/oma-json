@@ -1,6 +1,6 @@
-import omaObjects from './oma-object.json';
-import omaResources from './oma-resources.json';
-import omaViews from './oma-views.json';
+import omaObjects from './oma-object';
+import omaResources from './oma-resources';
+import omaViews from './oma-views';
 
 module.exports = {
   omaObjects,

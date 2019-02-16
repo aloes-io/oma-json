@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "lint": "npx eslint --ext js .",
-    "build": "npx babel src --out-dir dist --ignore 'src/**/tests/*.js'",
+    "build": "npx babel src --out-dir dist --copy-files"
   },
   "files": [
     "dist/*",

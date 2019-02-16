@@ -1,16 +1,8 @@
-# Aloes - Handlers
+# Open Mobile Alliance 
 
-Encode / decode MQTT stream from Iot device to browsers.
-Use [Open Mobile Alliance](http://www.openmobilealliance.org/wp/OMNA/LwM2M/LwM2MRegistry.html) standards as main target / source protocol.
+JSON schemas description from LwM2M [Open Mobile Alliance](http://www.openmobilealliance.org/wp/OMNA/LwM2M/LwM2MRegistry.html) 
 
-WIP :
 
-- Compatibility with MySensors
-- Compatibility with CayenneLPP
-
-Next :
-
-- Octoprint HTTP / MQTT Connector
 
 ---
 
@@ -19,13 +11,13 @@ Next :
 With npm :
 
 ```bash
-$ npm install aloes-handlers --save
+$ npm install oma-json --save
 ```
 
 Via script tag :
 
 ```html
-<script src="https://unpkg.com/aloes-handlers"> </script
+<script src="https://unpkg.com/oma-json"> </script
 ```
 
 ## Linting

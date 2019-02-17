@@ -1051,5 +1051,123 @@ const omaViews = [
 			'/icons/aloes/loudness-white.png',
 		],
 	},
+	{
+		name: 'Bitmap',
+		value: 3349,
+		resources: {
+			'5910': '#000',
+			'5911': '#000',
+			'5912': '#000',
+			'5750': '#000',
+		},
+		icons: [
+			'/icons/aloes/dither.svg',
+			'/icons/aloes/dither.png',
+			'/icons/aloes/dither-white.png',
+		],
+	},
+	{
+		name: 'Stopwatch',
+		value: 3350,
+		resources: {
+			'5501': '#000',
+			'5544': '#434B77',
+			'5850': '#000',
+			'5750': '#000',
+		},
+		icons: [
+			'/icons/aloes/time.svg',
+			'/icons/aloes/agenda.svg',
+			'/icons/aloes/time.png',
+			'/icons/aloes/time-white.png',
+			'/icons/aloes/agenda.png',
+			'/icons/aloes/agenda-white.png',
+		],
+	},
+	{
+		name: 'powerupLog',
+		value: 3351,
+		resources: {
+			'10': '#000',
+			'1': '#000',
+			'2': '#000',
+			'3': '#000',
+			'4': '#000',
+		},
+		icons: [
+			'/icons/aloes/clock.svg',
+			'/icons/aloes/clock.png',
+			'/icons/aloes/clock-white.png',
+		],
+	},
+	{
+		name: 'plmnSearchEvent',
+		value: 3352,
+		resources: {'0': '#000', '6030': '#000', '6031': '#000', '6032': '#000'},
+		icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
+	},
+	{
+		name: 'scellID',
+		value: 3353,
+		resources: {'2': '#000', '6030': '#000', '6031': '#000', '6033': '#000'},
+		icons: [
+			'/icons/aloes/clock.svg',
+			'/icons/aloes/clock.png',
+			'/icons/aloes/clock-white.png',
+		],
+	},
+	{
+		name: 'cellReselectionEvent',
+		value: 3354,
+		resources: {
+			'2': '#000',
+			'3': '#000',
+			'6032': '#000',
+			'6033': '#000',
+		},
+		icons: [
+			'/icons/aloes/clock.svg',
+			'/icons/aloes/clock.png',
+			'/icons/aloes/clock-white.png',
+		],
+	},
+	{
+		name: 'handoverEvent',
+		value: 3355,
+		resources: {
+			'0': '#000',
+			'3': '#000',
+			'4': '#000',
+			'5': '#000',
+			'6': '#000',
+			'6032': '#000',
+			'6033': '#000',
+		},
+		icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
+	},
+	{
+		name: 'radioLinkFailureEvent',
+		value: 3356,
+		resources: {'0': '#000', '1': '#000'},
+		icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
+	},
+	{
+		name: 'rrcStateChangeEvent',
+		value: 3357,
+		resources: {'0': '#000', '1': '#000'},
+		icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
+	},
+	{
+		name: 'rrcTimerExpiryEvent',
+		value: 3358,
+		resources: {'0': '#000'},
+		icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
+	},
+	{
+		name: 'cellBlacklistEvent',
+		value: 3359,
+		resources: {'6032': '#000', '6033': '#000'},
+		icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
+	},
 ];
 module.exports = omaViews;

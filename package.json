@@ -5,7 +5,11 @@
   "main": "./dist/index.js",
   "scripts": {
     "lint": "npx eslint --ext js .",
-    "build": "npx babel src --out-dir dist --copy-files"
+    "objects-test": "babel-node tests/omaObjects.js",
+    "resources-test": "babel-node tests/omaResources.js",
+    "views-test": "babel-node tests/omaViews.js",
+    "test": "npm run objects-test; npm run resources-test; npm run views-test",
+    "build": "npx babel src --out-dir dist"
   },
   "files": [
     "dist/*",
@@ -17,7 +21,7 @@
   "author": "getlarge",
   "keywords": [
     "IoT",
-    "MQTT",
+    "OMA",
     "Interoperability"
   ],
   "license": "ISC",

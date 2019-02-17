@@ -14,8 +14,6 @@ const omaObjects = [
       '5750': 'app_name',
       '5751': 'sensor_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/digital.png', '/icons/aloes/digital-white.png'],
   },
   {
     name: 'Digital Output',
@@ -23,8 +21,6 @@ const omaObjects = [
     value: 3201,
     resourceIds: '5550, 5551, 5750',
     resources: {'5550': 1, '5551': 1, '5750': 'app_name'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/digital.png', '/icons/aloes/digital-white.png'],
   },
   {
     name: 'Analog Input',
@@ -41,8 +37,6 @@ const omaObjects = [
       '5751': 'analog_input',
       '5605': null,
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/analog.png', '/icons/aloes/analog-white.png'],
   },
   {
     name: 'Analog Output',
@@ -51,8 +45,6 @@ const omaObjects = [
     value: 3203,
     resourceIds: '5650, 5603, 5604, 5750',
     resources: {'5650': 0.0, '5603': 0, '5604': 1024, '5750': 'app'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/analog.png', '/icons/aloes/analog-white.png'],
   },
   {
     name: 'Generic sensor',
@@ -71,8 +63,6 @@ const omaObjects = [
       '5751': 'custom_sensor',
       '5605': null,
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/custom.png', '/icons/aloes/custom-white.png'],
   },
   {
     name: 'Illuminance sensor',
@@ -88,8 +78,6 @@ const omaObjects = [
       '5605': 0,
       '5701': 'Lux',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/light.png', '/icons/aloes/light-white.png'],
   },
   {
     name: 'Presence sensor',
@@ -105,8 +93,6 @@ const omaObjects = [
       '5903': 0,
       '5904': 0,
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/presence.png', '/icons/aloes/presence-white.png'],
   },
   {
     name: 'Temperature Sensor',
@@ -123,11 +109,6 @@ const omaObjects = [
       '5605': null,
       '5701': '°C',
     },
-    colors: ['#5ae2e2', '#ff3535'],
-    icons: [
-      '/icons/aloes/temperature.png',
-      '/icons/aloes/temperature-white.png',
-    ],
   },
   {
     name: 'Humidity Sensor',
@@ -144,8 +125,6 @@ const omaObjects = [
       '5605': null,
       '5701': '%',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/humidity.png', '/icons/aloes/humidity-white.png'],
   },
   {
     name: 'Power Measurment',
@@ -174,13 +153,6 @@ const omaObjects = [
       '5822': 0.0,
       '5605': 0.0,
     },
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/switch-on.png',
-      '/icons/aloes/switch-off.png',
-      '/icons/aloes/switch-on-white.png',
-      '/icons/aloes/switch-off-white.png',
-    ],
   },
   {
     name: 'Actuation',
@@ -195,13 +167,6 @@ const omaObjects = [
       '5853': '',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/switch-on.png',
-      '/icons/aloes/switch-off.png',
-      '/icons/aloes/switch-on-white.png',
-      '/icons/aloes/switch-off-white.png',
-    ],
   },
   {
     name: 'Set Point',
@@ -215,13 +180,6 @@ const omaObjects = [
       '5706': 'color',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/switch-on.png',
-      '/icons/aloes/switch-off.png',
-      '/icons/aloes/switch-on-white.png',
-      '/icons/aloes/switch-off-white.png',
-    ],
   },
   {
     name: 'Load Control',
@@ -238,8 +196,6 @@ const omaObjects = [
       '5828': '0',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/slider.png', '/icons/aloes/slider-white.png'],
   },
   {
     name: 'Light control',
@@ -257,8 +213,6 @@ const omaObjects = [
       '5701': 'unit',
       '5750': 'app_name',
     },
-    colors: ['#000', '#f5f9e0'],
-    icons: ['/icons/aloes/slider.png', '/icons/aloes/slider-white.png'],
   },
   {
     name: 'Power control',
@@ -274,8 +228,6 @@ const omaObjects = [
       '5820': 0,
       '5750': 'app_name',
     },
-    colors: ['#a8f767', '#ffa916'],
-    icons: ['/icons/aloes/slider.png', '/icons/aloes/slider-white.png'],
   },
   {
     name: 'Accelerometer',
@@ -290,11 +242,6 @@ const omaObjects = [
       '5603': 10,
       '5604': -10,
     },
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/accelerometer.png',
-      '/icons/aloes/accelerometer-white.png',
-    ],
   },
   {
     name: 'Magnetometer',
@@ -303,8 +250,6 @@ const omaObjects = [
     value: 3314,
     resourceIds: '5701, 5702, 5703, 5704, 5705',
     resources: {'5701': 'G', '5702': 0, '5703': 0, '5704': 1, '5705': 360},
-    colors: ['#8eb3db', '#4673a3'],
-    icons: ['/icons/aloes/magnetism.png', '/icons/aloes/magnetism-white.png'],
   },
   {
     name: 'Barometer',
@@ -321,8 +266,6 @@ const omaObjects = [
       '5604': 30,
       '5605': null,
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/barometer.png', '/icons/aloes/barometer-white.png'],
   },
   {
     name: 'Voltage',
@@ -341,8 +284,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#aef9e4', '#33e8b5'],
-    icons: ['/icons/aloes/voltage.png', '/icons/aloes/voltage-white.png'],
   },
   {
     name: 'Current',
@@ -361,8 +302,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#f2e2bc', '#f4bd3a'],
-    icons: ['/icons/aloes/voltage.png', '/icons/aloes/voltage-white.png'],
   },
   {
     name: 'Frequency',
@@ -381,8 +320,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#f2e2bc', '#f4bd3a'],
-    icons: ['/icons/aloes/frequency.png', '/icons/aloes/frequency-white.png'],
   },
   {
     name: 'Depth',
@@ -401,8 +338,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/depth.png', '/icons/aloes/depth-white.png'],
   },
   {
     name: 'Percentage',
@@ -421,8 +356,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/percentage.png', '/icons/aloes/percentage-white.png'],
   },
   {
     name: 'Altitude',
@@ -441,8 +374,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/height.png', '/icons/aloes/height-white.png'],
   },
   {
     name: 'Load',
@@ -461,8 +392,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/voltage.png', '/icons/aloes/voltage-white.png'],
   },
   {
     name: 'Pressure',
@@ -481,8 +410,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/pressure.png', '/icons/aloes/pressure-white.png'],
   },
   {
     name: 'Loudness',
@@ -501,8 +428,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/loudness.png', '/icons/aloes/loudness-white.png'],
   },
   {
     name: 'Concentration',
@@ -521,8 +446,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/petri-dish.png', '/icons/aloes/petri-dish-white.png'],
   },
   {
     name: 'Acidity',
@@ -541,8 +464,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/acid.png', '/icons/aloes/acid-white.png'],
   },
   {
     name: 'Conductivity',
@@ -561,8 +482,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/electrons.png', '/icons/aloes/electrons-white.png'],
   },
   {
     name: 'Power',
@@ -581,8 +500,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/power.png', '/icons/aloes/power-white.png'],
   },
   {
     name: 'Power factor',
@@ -601,8 +518,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/phi.png', '/icons/aloes/phi-white.png'],
   },
   {
     name: 'Distance',
@@ -621,8 +536,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/distance.png', '/icons/aloes/distance-white.png'],
   },
   {
     name: 'Energy',
@@ -636,8 +549,6 @@ const omaObjects = [
       '5822': null,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/energy.png', '/icons/aloes/energy-white.png'],
   },
   {
     name: 'Direction',
@@ -652,8 +563,6 @@ const omaObjects = [
       '5605': null,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/direction.png', '/icons/aloes/direction-white.png'],
   },
   {
     name: 'Time',
@@ -662,8 +571,6 @@ const omaObjects = [
     value: 3333,
     resourceIds: '5506, 5507, 5750',
     resources: {'5506': 0, '5507': 0, '5750': 'app_name'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/time.png', '/icons/aloes/time-white.png'],
   },
   {
     name: 'Gyrometer',
@@ -688,11 +595,6 @@ const omaObjects = [
       '5605': null,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/accelerometer.png',
-      '/icons/aloes/accelerometer-white.png',
-    ],
   },
   {
     name: 'Color',
@@ -701,8 +603,6 @@ const omaObjects = [
     value: 3335,
     resourceIds: '5706, 5701, 5750',
     resources: {'5706': '#fff', '5701': 'hex', '5750': 'app_name'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/colors.png', '/icons/aloes/colors-white.png'],
   },
   {
     name: 'GPS Location',
@@ -718,8 +618,6 @@ const omaObjects = [
       '5518': 'time',
       '5705': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/location.png', '/icons/aloes/location-white.png'],
   },
   {
     name: 'Positioner',
@@ -738,11 +636,6 @@ const omaObjects = [
       '5520': 20,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/level-control.png',
-      '/icons/aloes/level-control-white.png',
-    ],
   },
   {
     name: 'Buzzer',
@@ -757,8 +650,6 @@ const omaObjects = [
       '5525': 0,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/loudness.png', '/icons/aloes/loudness-white.png'],
   },
   {
     name: 'Audio clip',
@@ -773,8 +664,6 @@ const omaObjects = [
       '5548': 100,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/loudness.png', '/icons/aloes/loudness-white.png'],
   },
   {
     name: 'Timer',
@@ -796,8 +685,6 @@ const omaObjects = [
       '5850': 1,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'Addressable text display',
@@ -817,8 +704,6 @@ const omaObjects = [
       '5850': 1,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/text.png', '/icons/aloes/text-white.png'],
   },
   {
     name: 'On/Off Switch',
@@ -833,8 +718,6 @@ const omaObjects = [
       '5854': 0,
       '5750': 'app-name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/switch-on.png', '/icons/aloes/switch-on-white.png'],
   },
   {
     name: 'Level Control',
@@ -843,11 +726,6 @@ const omaObjects = [
     value: 3343,
     resourceIds: '5548, 5852, 5854, 5750',
     resources: {'5548': 1, '5852': 1, '5854': 0, '5750': 'app_name'},
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/level-control.png',
-      '/icons/aloes/level-control-white.png',
-    ],
   },
   {
     name: 'Up/Down Control',
@@ -863,8 +741,6 @@ const omaObjects = [
       '5542': 0,
       '5750': 'app_name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/height.png', '/icons/aloes/height-white.png'],
   },
   {
     name: 'Multiple Axis Joystick',
@@ -880,8 +756,6 @@ const omaObjects = [
       '5704': 0,
       '5750': 'app-name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/joystick.png', '/icons/aloes/joystick-white.png'],
   },
   {
     name: 'Rate',
@@ -900,8 +774,6 @@ const omaObjects = [
       '5821': 'coeff',
       '5750': 'app-name',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/frequency.png', '/icons/aloes/frequency-white.png'],
   },
   {
     name: 'Push Button',
@@ -910,11 +782,6 @@ const omaObjects = [
     value: 3347,
     resourceIds: '5500, 5501, 5750',
     resources: {'5500': 0, '5501': 0, '5750': 'app-name'},
-    colors: ['#000', '#adadad'],
-    icons: [
-      '/icons/aloes/push-button.png',
-      '/icons/aloes/push-button-white.png',
-    ],
   },
   {
     name: 'Multistate Selector',
@@ -923,8 +790,6 @@ const omaObjects = [
     value: 3348,
     resourceIds: '5547, 5750',
     resources: {'5547': 0, '5750': 'app-name'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/loudness.png', '/icons/aloes/loudness-white.png'],
   },
   {
     name: 'Bitmap',
@@ -933,8 +798,6 @@ const omaObjects = [
     value: 3349,
     resourceIds: '5910, 5911, 5912, 5750',
     resources: {'5910': 0, '5911': null, '5912': '', '5750': 'app-name'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/dither.png', '/icons/aloes/dither-white.png'],
   },
   {
     name: 'Stopwatch',
@@ -943,8 +806,6 @@ const omaObjects = [
     value: 3350,
     resourceIds: '5501, 5544, 5850, 5750',
     resources: {'5501': 0, '5544': 0, '5850': 1, '5750': 'app-name'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'powerupLog',
@@ -959,8 +820,6 @@ const omaObjects = [
       '3': 'IMSI',
       '4': 'MSISDN',
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'plmnSearchEvent',
@@ -968,8 +827,6 @@ const omaObjects = [
     value: 3352,
     resourceIds: '0, 6030, 6031, 6032',
     resources: {'0': 'timeScanStart', '6030': 0, '6031': 0, '6032': 0},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'scellID',
@@ -977,8 +834,6 @@ const omaObjects = [
     value: 3353,
     resourceIds: '2, 6030, 6031, 6033',
     resources: {'2': 'TrackingAreaCode', '6030': 0, '6031': 0, '6033': 0},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'cellReselectionEvent',
@@ -991,8 +846,6 @@ const omaObjects = [
       '6032': 0,
       '6033': 0,
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'handoverEvent',
@@ -1008,8 +861,6 @@ const omaObjects = [
       '6032': 0,
       '6033': 0,
     },
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'radioLinkFailureEvent',
@@ -1017,8 +868,6 @@ const omaObjects = [
     value: 3356,
     resourceIds: '0, 1',
     resources: {'0': 'timeRLF', '1': 'rlfCause'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'rrcStateChangeEvent',
@@ -1027,8 +876,6 @@ const omaObjects = [
     value: 3357,
     resourceIds: '0, 1',
     resources: {'0': 'rrcState', '1': 'rrcStateChangeCause'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'rrcTimerExpiryEvent',
@@ -1036,8 +883,6 @@ const omaObjects = [
     value: 3358,
     resourceIds: '0',
     resources: {'0': 'RrcTimerExpiryEvent'},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
   {
     name: 'cellBlacklistEvent',
@@ -1045,8 +890,6 @@ const omaObjects = [
     value: 3359,
     resourceIds: '6032, 6033',
     resources: {'6032': 0, '6033': 0},
-    colors: ['#000', '#adadad'],
-    icons: ['/icons/aloes/clock.png', '/icons/aloes/clock-white.png'],
   },
 ];
 

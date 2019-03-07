@@ -89,7 +89,6 @@ const omaViews = [
 			'5603': '#5ae2e2',
 			'5604': '#ff3535',
 			'5605': '#000',
-			'5701': '#000',
 		},
 		icons: [
 			'/icons/aloes/light.svg',

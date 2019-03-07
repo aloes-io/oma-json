@@ -3,7 +3,6 @@
 JSON schemas description from LwM2M [Open Mobile Alliance](http://www.openmobilealliance.org/wp/OMNA/LwM2M/LwM2MRegistry.html) 
 
 
-
 ---
 
 ## Installation

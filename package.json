@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "scripts": {
     "lint": "npx eslint --ext js .",
-    "objects-test": "babel-node tests/omaObjects.js",
-    "resources-test": "babel-node tests/omaResources.js",
-    "views-test": "babel-node tests/omaViews.js",
-    "test": "npm run objects-test; npm run resources-test; npm run views-test",
+    "test:objects": "babel-node tests/omaObjects.js",
+    "test:resources": "babel-node tests/omaResources.js",
+    "test:views": "babel-node tests/omaViews.js",
+    "test": "npm run test:objects; npm run test:resources; npm run test:views",
     "build": "npx babel src --out-dir dist"
   },
   "files": [

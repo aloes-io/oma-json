@@ -418,7 +418,7 @@ const omaViews = [
 			'5750': '#000',
 		},
 		icons: [
-			'/icons/aloes/percentage.sv',
+			'/icons/aloes/percentage.svg',
 			'/icons/aloes/percentage.png',
 			'/icons/aloes/percentage-white.png',
 		],

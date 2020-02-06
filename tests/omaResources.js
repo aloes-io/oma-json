@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import {omaResources} from '../src/.';
+const {omaResources} = require('../src');
 
 console.log(
 	'Should be Current Time',

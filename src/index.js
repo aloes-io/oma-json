@@ -1,9 +1,11 @@
-import omaObjects from './omaObjects';
-import omaResources from './omaResources';
-import omaViews from './omaViews';
+const omaObjects = require('./omaObjects');
+const omaResources = require('./omaResources');
+const omaViews = require('./omaViews');
+const version = require('./../package.json').version;
 
 module.exports = {
-  omaObjects,
-  omaResources,
-  omaViews,
+	omaObjects,
+	omaResources,
+	omaViews,
+	version,
 };

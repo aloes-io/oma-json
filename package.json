@@ -1,6 +1,6 @@
 {
   "name": "oma-json",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
@@ -8,7 +8,18 @@
     "test:objects": "node tests/omaObjects.js",
     "test:resources": "node tests/omaResources.js",
     "test:views": "node tests/omaViews.js",
-    "test": "npm run test:objects; npm run test:resources; npm run test:views"
+    "test": "npm run test:objects; npm run test:resources; npm run test:views",
+    "generate:openapi": "node utils/modelsToOpenApi.js",
+    "generate:interfaces": "node utils/openApiToInterfaces.js",
+    "generate": "npm run generate:openapi ; npm run generate:interfaces"
+  },
+  "pre-commit": {
+    "run": [
+      "lint",
+      "test",
+      "generate"
+    ],
+    "silent": false
   },
   "files": [
     "dist/*",
@@ -25,13 +36,12 @@
   ],
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^11.3.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "identity-obj-proxy": "^3.0.0",
-    "prettier": "1.16.1"
+    "eslint": "^6.8.0",
+    "ibm-openapi-validator": "^0.26.1",
+    "json-schema-to-typescript": "^8.2.0",
+    "lodash": "^4.17.15",
+    "pre-commit": "^1.2.2",
+    "prettier": "2.0.4"
   },
   "prettier": {
     "bracketSpacing": false,
@@ -39,29 +49,18 @@
     "printWidth": 80,
     "trailingComma": "all"
   },
+  "prettierIgnore": [
+    "/dist/",
+    "/node_modules/"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
       "es6": true,
       "node": true
     },
-    "extends": [
-      "airbnb-base",
-      "prettier"
-    ],
-    "plugins": [
-      "babel"
-    ],
     "parserOptions": {
-      "ecmaVersion": 2018,
-      "parser": "babel-eslint"
-    },
-    "rules": {
-      "import/no-unresolved": "off",
-      "import/extensions": "off",
-      "import/prefer-default-export": "off",
-      "no-param-reassign": "off",
-      "one-var-declaration-per-line": "off"
+      "ecmaVersion": 2018
     },
     "globals": {
       "require": true
@@ -69,11 +68,11 @@
   },
   "eslintIgnore": [
     "/dist/",
-    "/node_modules/",
-    "aloes-handlers.min.js"
+    "/node_modules/"
   ],
   "repository": {
     "type": "git",
     "url": "https://framagit.org/aloes/oma-json"
-  }
+  },
+  "types": "types/index.d.ts"
 }

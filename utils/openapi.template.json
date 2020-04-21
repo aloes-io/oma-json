@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mocking OpenAPI Schema",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "get_oma_resources",
+        "summary": "Fake opeation",
+        "tags": ["OMAResources"],
+        "responses": {
+          "200": {
+            "description": "Fake description",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Fake schema",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "components": {
+    "schemas": {}
+  }
+}

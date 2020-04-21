@@ -802,7 +802,7 @@ const omaResources = [
 	},
 	{
 		name: 'UUID',
-		description: '',
+		description: 'A universally unique identifier to identify information',
 		value: 5913,
 		operations: 'R,W',
 		type: 'String',

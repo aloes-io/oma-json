@@ -27,10 +27,20 @@ With ESLint
 $ npm run lint
 ```
 
-## Build
-
-With babel-cli
+## Test
 
 ```bash
-$ npm run build
+$ npm run test
+```
+
+## Generate Open API from OMA models
+
+```bash
+$ npm run generate:openapi
+```
+
+## Generate Typescript interfaces from Open API schemas
+
+```bash
+$ npm run generate:interfaces
 ```

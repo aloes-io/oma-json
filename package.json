@@ -24,6 +24,8 @@
   "files": [
     "dist/*",
     "src/*",
+    "types/*",
+    "interfaces/*",
     "*.json",
     "*.js",
     "*.md"

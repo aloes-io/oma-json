@@ -30,7 +30,10 @@
     "*.js",
     "*.md"
   ],
-  "author": "getlarge",
+  "author": "Edouard Maleix <ed@getlarge.eu> (https://getlarge.eu)",
+  "contributors": [
+    "Edouard Maleix <ed@getlarge.eu> (https://getlarge.eu)"
+  ],
   "keywords": [
     "IoT",
     "OMA",

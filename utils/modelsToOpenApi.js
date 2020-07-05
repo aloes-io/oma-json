@@ -70,6 +70,7 @@ const objectModelsToOpenApi = (openApi) => {
           ['x-alt-title']: propertyName,
           description: resource.description,
           type: setType[resource.type],
+          default: object.resources[resourceName],
           nullable: true,
           readOnly: isReadOnly(resource.operations),
           writeOnly: isWriteOnly(resource.operations),

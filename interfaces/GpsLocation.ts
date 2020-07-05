@@ -24,9 +24,7 @@ export interface GpsLocation {
   /**
    * The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static.
    */
-  "5517"?: {
-    [k: string]: any;
-  };
+  "5517"?: string;
   /**
    * The timestamp of when the location measurement was performed.
    */

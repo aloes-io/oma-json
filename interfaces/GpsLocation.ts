@@ -12,27 +12,27 @@ export interface GpsLocation {
   /**
    * The decimal notation of latitude, e.g. -43.5723 (World Geodetic System 1984).
    */
-  "5514": string;
+  "5514"?: string;
   /**
    * The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984).
    */
-  "5515": string;
+  "5515"?: string;
   /**
    * The accuracy of the position in meters.
    */
-  "5516": string;
+  "5516"?: string;
   /**
    * The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static.
    */
-  "5517": {
+  "5517"?: {
     [k: string]: any;
   };
   /**
    * The timestamp of when the location measurement was performed.
    */
-  "5518": string;
+  "5518"?: string;
   /**
    * The compass direction.
    */
-  "5705": number;
+  "5705"?: number;
 }

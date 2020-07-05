@@ -12,17 +12,17 @@ export interface LevelControl {
   /**
    * Input/output level control, float value between 0 and 100 as a percentage.
    */
-  "5548": number;
+  "5548"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * The time in seconds that the device has been on. Writing a value of 0 resets the counter.
    */
-  "5852": number;
+  "5852"?: number;
   /**
    * The time in seconds since the Off command was sent. Writing a value of 0 resets the counter.
    */
-  "5854": number;
+  "5854"?: number;
 }

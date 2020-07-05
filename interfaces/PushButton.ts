@@ -12,13 +12,13 @@ export interface PushButton {
   /**
    * The current state of a digital input.
    */
-  "5500": boolean;
+  "5500"?: boolean;
   /**
    * The cumulative value of active state detected.
    */
-  "5501": number;
+  "5501"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

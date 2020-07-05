@@ -45,61 +45,76 @@
             "title": "5500",
             "x-alt-title": "digitalInputState",
             "description": "The current state of a digital input.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5501": {
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5502": {
             "title": "5502",
             "x-alt-title": "digitalInputPolarity",
             "description": "The polarity of the digital input as a Boolean (0 = Normal, 1= Reversed).",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5503": {
             "title": "5503",
             "x-alt-title": "digitalInputDebounce",
             "description": "The debounce period in ms.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5504": {
             "title": "5504",
             "x-alt-title": "digitalInputEdgeSelection",
             "description": "The edge selection as an integer (1 = Falling edge, 2 = Rising edge, 3 = Both Rising and Falling edge).",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5505": {
             "title": "5505",
             "x-alt-title": "digitalInputCounterReset",
             "description": "Reset the Counter value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5751": {
             "title": "5751",
             "x-alt-title": "sensorType",
             "description": "The type of the sensor (for instance PIR type).",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5500",
-          "5501",
-          "5502",
-          "5503",
-          "5504",
-          "5505",
-          "5750",
-          "5751"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "DigitalOutput": {
@@ -112,26 +127,31 @@
             "title": "5550",
             "x-alt-title": "digitalOutputState",
             "description": "The current state of a digital output,  0=OFF, 1=ON..",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5551": {
             "title": "5551",
             "x-alt-title": "digitalOutputPolarity",
             "description": "The polarity of a digital ouput as a Boolean (0 = Normal, 1= Reversed).",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5550",
-          "5551",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "AnalogInput": {
@@ -144,61 +164,76 @@
             "title": "5600",
             "x-alt-title": "analogInputState",
             "description": "The current value of the analog input.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5601": {
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5751": {
             "title": "5751",
             "x-alt-title": "sensorType",
             "description": "The type of the sensor (for instance PIR type).",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5600",
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5750",
-          "5751"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "AnalogOutput": {
@@ -211,33 +246,40 @@
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5650": {
             "title": "5650",
             "x-alt-title": "analogOutputCurrentValue",
             "description": "The current state of the analogue output.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5603",
-          "5604",
-          "5650",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "GenericSensor": {
@@ -250,68 +292,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5751": {
             "title": "5751",
             "x-alt-title": "sensorType",
             "description": "The type of the sensor (for instance PIR type).",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5751"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "IlluminanceSensor": {
@@ -324,54 +383,67 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PresenceSensor": {
@@ -384,47 +456,58 @@
             "title": "5500",
             "x-alt-title": "digitalInputState",
             "description": "The current state of a digital input.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5501": {
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5505": {
             "title": "5505",
             "x-alt-title": "digitalInputCounterReset",
             "description": "Reset the Counter value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5751": {
             "title": "5751",
             "x-alt-title": "sensorType",
             "description": "The type of the sensor (for instance PIR type).",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5903": {
             "title": "5903",
             "x-alt-title": "busyToClearDelay",
             "description": "Delay from the detection state to the clear state in ms.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5904": {
             "title": "5904",
             "x-alt-title": "clearToBusyDelay",
             "description": "Delay from the clear state to the busy state in ms.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5500",
-          "5501",
-          "5505",
-          "5751",
-          "5903",
-          "5904"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "TemperatureSensor": {
@@ -437,54 +520,67 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "HumiditySensor": {
@@ -497,54 +593,67 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PowerMeasurment": {
@@ -557,131 +666,166 @@
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5800": {
             "title": "5800",
             "x-alt-title": "instantaneousActivePower",
             "description": "The current active power.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5801": {
             "title": "5801",
             "x-alt-title": "minMeasuredActivePower",
             "description": "The minimum active power measured by the sensor since it is ON.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5802": {
             "title": "5802",
             "x-alt-title": "maxMeasuredActivePower",
             "description": "The maximum active power measured by the sensor since it is ON.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5803": {
             "title": "5803",
             "x-alt-title": "minRangeActivePower",
             "description": "The minimum active power that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5804": {
             "title": "5804",
             "x-alt-title": "maxRangeActivePower",
             "description": "The maximum active power that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5805": {
             "title": "5805",
             "x-alt-title": "cumulativeActivePower",
             "description": "The total power in Wh that the light has used.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5806": {
             "title": "5806",
             "x-alt-title": "activePowerCalibration",
             "description": "Request an active power calibration by writing the value of a calibrated load.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": true
           },
           "5810": {
             "title": "5810",
             "x-alt-title": "instantaneousReactivePower",
             "description": "The current reactive power.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5811": {
             "title": "5811",
             "x-alt-title": "minMeasuredReactivePower",
             "description": "The minimum reactive power measured by the sensor since it is ON.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5812": {
             "title": "5812",
             "x-alt-title": "maxMeasuredReactivePower",
             "description": "The maximum reactive power measured by the sensor since it is ON.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5813": {
             "title": "5813",
             "x-alt-title": "minRangeReactivePower",
             "description": "The minimum active power that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5814": {
             "title": "5814",
             "x-alt-title": "maxRangeReactivePower",
             "description": "The minimum active power that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5815": {
             "title": "5815",
             "x-alt-title": "cumulativeReactivePower",
             "description": "The cumulative reactive power since the last cumulative energy reset or device start.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5816": {
             "title": "5816",
             "x-alt-title": "reactivePowerCalibration",
             "description": "Request a reactive power calibration by writing the value of a calibrated load.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": true
           },
           "5820": {
             "title": "5820",
             "x-alt-title": "powerFactor",
             "description": "The power factor of the actuactor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5822": {
             "title": "5822",
             "x-alt-title": "resetCumulativeEnergy",
             "description": "Reset both cumulative active/reactive power.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5605",
-          "5800",
-          "5801",
-          "5802",
-          "5803",
-          "5804",
-          "5805",
-          "5806",
-          "5810",
-          "5811",
-          "5812",
-          "5813",
-          "5814",
-          "5815",
-          "5816",
-          "5820",
-          "5821",
-          "5822"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Actuation": {
@@ -694,40 +838,49 @@
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5851": {
             "title": "5851",
             "x-alt-title": "dimmer",
             "description": "This resource represents dimmer setting, which has an Integer value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5852": {
             "title": "5852",
             "x-alt-title": "onTime",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5853": {
             "title": "5853",
             "x-alt-title": "multiStateOutput",
             "description": "A string describing a state for multiple level output such as Pilot Wire.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5750",
-          "5850",
-          "5851",
-          "5852",
-          "5853"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "SetPoint": {
@@ -740,33 +893,40 @@
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5706": {
             "title": "5706",
             "x-alt-title": "colour",
             "description": "A string representing a value in some color space",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5900": {
             "title": "5900",
             "x-alt-title": "setPointValue",
             "description": "The setpoint value.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5701",
-          "5706",
-          "5750",
-          "5900"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "LoadControl": {
@@ -779,54 +939,67 @@
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5823": {
             "title": "5823",
             "x-alt-title": "eventIdentifier",
             "description": "The event identifier as a string.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5824": {
             "title": "5824",
             "x-alt-title": "startTime",
             "description": "Time when the load control event will start started.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5825": {
             "title": "5825",
             "x-alt-title": "durationInMin",
             "description": "The duration of the load control event.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5826": {
             "title": "5826",
             "x-alt-title": "criticalityLevel",
             "description": "The criticality of the event.  The device receiving the event will react in an appropriate fashion for the device.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5827": {
             "title": "5827",
             "x-alt-title": "avgLoadAdjPct",
             "description": "Defines the maximum energy usage of the receivng device, as a percentage of the device's normal maximum energy usage.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5828": {
             "title": "5828",
             "x-alt-title": "dutyCycle",
             "description": "Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5750",
-          "5823",
-          "5824",
-          "5825",
-          "5826",
-          "5827",
-          "5828"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "LightControl": {
@@ -839,61 +1012,76 @@
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5706": {
             "title": "5706",
             "x-alt-title": "colour",
             "description": "A string representing a value in some color space",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5805": {
             "title": "5805",
             "x-alt-title": "cumulativeActivePower",
             "description": "The total power in Wh that the light has used.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5820": {
             "title": "5820",
             "x-alt-title": "powerFactor",
             "description": "The power factor of the actuactor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5851": {
             "title": "5851",
             "x-alt-title": "dimmer",
             "description": "This resource represents dimmer setting, which has an Integer value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5852": {
             "title": "5852",
             "x-alt-title": "onTime",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5701",
-          "5706",
-          "5750",
-          "5805",
-          "5820",
-          "5850",
-          "5851",
-          "5852"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PowerControl": {
@@ -906,47 +1094,58 @@
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5805": {
             "title": "5805",
             "x-alt-title": "cumulativeActivePower",
             "description": "The total power in Wh that the light has used.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5820": {
             "title": "5820",
             "x-alt-title": "powerFactor",
             "description": "The power factor of the actuactor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5851": {
             "title": "5851",
             "x-alt-title": "dimmer",
             "description": "This resource represents dimmer setting, which has an Integer value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5852": {
             "title": "5852",
             "x-alt-title": "onTime",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5750",
-          "5805",
-          "5820",
-          "5850",
-          "5851",
-          "5852"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Accelerometer": {
@@ -959,47 +1158,58 @@
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5702": {
             "title": "5702",
             "x-alt-title": "xValue",
             "description": "The measured value along the X axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5703": {
             "title": "5703",
             "x-alt-title": "yValue",
             "description": "The measured value along the Y axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5704": {
             "title": "5704",
             "x-alt-title": "zValue",
             "description": "The measured value along the Z axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5603",
-          "5604",
-          "5701",
-          "5702",
-          "5703",
-          "5704"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Magnetometer": {
@@ -1012,40 +1222,49 @@
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5702": {
             "title": "5702",
             "x-alt-title": "xValue",
             "description": "The measured value along the X axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5703": {
             "title": "5703",
             "x-alt-title": "yValue",
             "description": "The measured value along the Y axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5704": {
             "title": "5704",
             "x-alt-title": "zValue",
             "description": "The measured value along the Z axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5705": {
             "title": "5705",
             "x-alt-title": "compassDirection",
             "description": "The compass direction.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5701",
-          "5702",
-          "5703",
-          "5704",
-          "5705"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Barometer": {
@@ -1058,54 +1277,67 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Voltage": {
@@ -1118,68 +1350,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Current": {
@@ -1192,68 +1441,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Frequency": {
@@ -1266,68 +1532,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Depth": {
@@ -1340,68 +1623,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Percentage": {
@@ -1414,68 +1714,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Altitude": {
@@ -1488,68 +1805,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Load": {
@@ -1562,68 +1896,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Pressure": {
@@ -1636,68 +1987,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Loudness": {
@@ -1710,68 +2078,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Concentration": {
@@ -1784,68 +2169,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Acidity": {
@@ -1858,68 +2260,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Conductivity": {
@@ -1932,68 +2351,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Power": {
@@ -2006,68 +2442,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PowerFactor": {
@@ -2080,68 +2533,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Distance": {
@@ -2154,68 +2624,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Energy": {
@@ -2228,33 +2715,40 @@
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5805": {
             "title": "5805",
             "x-alt-title": "cumulativeActivePower",
             "description": "The total power in Wh that the light has used.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5822": {
             "title": "5822",
             "x-alt-title": "resetCumulativeEnergy",
             "description": "Reset both cumulative active/reactive power.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5701",
-          "5750",
-          "5805",
-          "5822"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Direction": {
@@ -2267,40 +2761,49 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5705": {
             "title": "5705",
             "x-alt-title": "compassDirection",
             "description": "The compass direction.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5605",
-          "5705",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Time": {
@@ -2313,26 +2816,31 @@
             "title": "5506",
             "x-alt-title": "currentTime",
             "description": "Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5507": {
             "title": "5507",
             "x-alt-title": "fractionalTime",
             "description": "For shorter times of a fraction of a second (i.e. 0.23).",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5506",
-          "5507",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Gyrometer": {
@@ -2345,103 +2853,130 @@
             "title": "5508",
             "x-alt-title": "minXValue",
             "description": "The minimum measured value along the X axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5509": {
             "title": "5509",
             "x-alt-title": "maxXValue",
             "description": "The maximum measured value along the X axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5510": {
             "title": "5510",
             "x-alt-title": "minYValue",
             "description": "The minimum measured value along the Y axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5511": {
             "title": "5511",
             "x-alt-title": "maxYValue",
             "description": "The maximum measured value along the Y axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5512": {
             "title": "5512",
             "x-alt-title": "minZValue",
             "description": "The minimum measured value along the Z axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5513": {
             "title": "5513",
             "x-alt-title": "maxZValue",
             "description": "The maximum measured value along the Z axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5702": {
             "title": "5702",
             "x-alt-title": "xValue",
             "description": "The measured value along the X axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5703": {
             "title": "5703",
             "x-alt-title": "yValue",
             "description": "The measured value along the Y axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5704": {
             "title": "5704",
             "x-alt-title": "zValue",
             "description": "The measured value along the Z axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5508",
-          "5509",
-          "5510",
-          "5511",
-          "5512",
-          "5513",
-          "5603",
-          "5604",
-          "5605",
-          "5701",
-          "5702",
-          "5703",
-          "5704",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Color": {
@@ -2454,26 +2989,31 @@
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5706": {
             "title": "5706",
             "x-alt-title": "colour",
             "description": "A string representing a value in some color space",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5701",
-          "5706",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "GpsLocation": {
@@ -2486,47 +3026,58 @@
             "title": "5514",
             "x-alt-title": "latitude",
             "description": "The decimal notation of latitude, e.g. -43.5723 (World Geodetic System 1984).",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5515": {
             "title": "5515",
             "x-alt-title": "longitude",
             "description": "The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984).",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5516": {
             "title": "5516",
             "x-alt-title": "uncertainty",
             "description": "The accuracy of the position in meters.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5517": {
             "title": "5517",
             "x-alt-title": "velocity",
             "description": "The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static.",
-            "type": "object"
+            "type": "object",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5518": {
             "title": "5518",
             "x-alt-title": "timestamp",
             "description": "The timestamp of when the location measurement was performed.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5705": {
             "title": "5705",
             "x-alt-title": "compassDirection",
             "description": "The compass direction.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5514",
-          "5515",
-          "5516",
-          "5517",
-          "5518",
-          "5705"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Positioner": {
@@ -2539,68 +3090,85 @@
             "title": "5519",
             "x-alt-title": "minLimit",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5520": {
             "title": "5520",
             "x-alt-title": "maxLimit",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5536": {
             "title": "5536",
             "x-alt-title": "currentPosition",
             "description": "Current position or desired position of a positioner actuator.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5537": {
             "title": "5537",
             "x-alt-title": "transitionTime",
             "description": "The time expected to move the actuator to the new position.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5538": {
             "title": "5538",
             "x-alt-title": "remainingTime",
             "description": "The time remaining in an operation.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5601": {
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5519",
-          "5520",
-          "5536",
-          "5537",
-          "5538",
-          "5601",
-          "5602",
-          "5605",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Buzzer": {
@@ -2613,40 +3181,49 @@
             "title": "5521",
             "x-alt-title": "delayDuration",
             "description": "The duration of the time delay.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5525": {
             "title": "5525",
             "x-alt-title": "minimumOffTime",
             "description": "The off time when On/Off control remains on.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5548": {
             "title": "5548",
             "x-alt-title": "level",
             "description": "Input/output level control, float value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5521",
-          "5525",
-          "5548",
-          "5750",
-          "5850"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "AudioClip": {
@@ -2659,40 +3236,49 @@
             "title": "5522",
             "x-alt-title": "clip",
             "description": "Audio Clip that is playable (i.e. short audio recording indicating the floor in an elevator).",
-            "type": "object"
+            "type": "object",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5523": {
             "title": "5523",
             "x-alt-title": "trigger",
             "description": "Trigger initiating actuation.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5524": {
             "title": "5524",
             "x-alt-title": "duration",
             "description": "The duration of the sound once trigger.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5548": {
             "title": "5548",
             "x-alt-title": "level",
             "description": "Input/output level control, float value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5522",
-          "5523",
-          "5524",
-          "5548",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Timer": {
@@ -2705,82 +3291,103 @@
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5521": {
             "title": "5521",
             "x-alt-title": "delayDuration",
             "description": "The duration of the time delay.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5523": {
             "title": "5523",
             "x-alt-title": "trigger",
             "description": "Trigger initiating actuation.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5525": {
             "title": "5525",
             "x-alt-title": "minimumOffTime",
             "description": "The off time when On/Off control remains on.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5526": {
             "title": "5526",
             "x-alt-title": "mode",
             "description": "type of timer pattern used by the patterns.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5534": {
             "title": "5534",
             "x-alt-title": "counter",
             "description": "Counts the number of times the timer output transitions from 0 to 1.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5538": {
             "title": "5538",
             "x-alt-title": "remainingTime",
             "description": "The time remaining in an operation.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5543": {
             "title": "5543",
             "x-alt-title": "digitalState",
             "description": "The current state of the timer output.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5544": {
             "title": "5544",
             "x-alt-title": "cumulativeTime",
             "description": "The total time in seconds that the timer input is true. Writing a 0 resets the time.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5501",
-          "5521",
-          "5523",
-          "5525",
-          "5526",
-          "5534",
-          "5538",
-          "5543",
-          "5544",
-          "5750",
-          "5850"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "AddressableTextDisplay": {
@@ -2793,75 +3400,94 @@
             "title": "5527",
             "x-alt-title": "text",
             "description": "A string of text.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5528": {
             "title": "5528",
             "x-alt-title": "xCoordinate",
             "description": "X Coordinate.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5529": {
             "title": "5529",
             "x-alt-title": "yCoordinate",
             "description": "Y Coordinate.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5530": {
             "title": "5530",
             "x-alt-title": "clearDisplay",
             "description": "Command to clear the display.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5531": {
             "title": "5531",
             "x-alt-title": "contrast",
             "description": "Proportional control, integer value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5545": {
             "title": "5545",
             "x-alt-title": "maxXCoordinate",
             "description": "The highest X coordinate the display supports before wrapping to the next line.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5546": {
             "title": "5546",
             "x-alt-title": "maxYCoordinate",
             "description": "The highest Y coordinate the display supports before wrapping to the next line.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5548": {
             "title": "5548",
             "x-alt-title": "level",
             "description": "Input/output level control, float value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5527",
-          "5528",
-          "5529",
-          "5530",
-          "5531",
-          "5545",
-          "5546",
-          "5548",
-          "5750",
-          "5850"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "OnOffSwitch": {
@@ -2874,40 +3500,49 @@
             "title": "5500",
             "x-alt-title": "digitalInputState",
             "description": "The current state of a digital input.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5501": {
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5852": {
             "title": "5852",
             "x-alt-title": "onTime",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5854": {
             "title": "5854",
             "x-alt-title": "offTime",
             "description": "The time in seconds since the Off command was sent. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5500",
-          "5501",
-          "5750",
-          "5852",
-          "5854"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "LevelControl": {
@@ -2920,33 +3555,40 @@
             "title": "5548",
             "x-alt-title": "level",
             "description": "Input/output level control, float value between 0 and 100 as a percentage.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5852": {
             "title": "5852",
             "x-alt-title": "onTime",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5854": {
             "title": "5854",
             "x-alt-title": "offTime",
             "description": "The time in seconds since the Off command was sent. Writing a value of 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5548",
-          "5750",
-          "5852",
-          "5854"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "UpDownControl": {
@@ -2959,40 +3601,49 @@
             "title": "5532",
             "x-alt-title": "increaseInputState",
             "description": "Indicates an increase control action.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5533": {
             "title": "5533",
             "x-alt-title": "decreaseInputState",
             "description": "Indicates an decrease control action.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5541": {
             "title": "5541",
             "x-alt-title": "upCounter",
             "description": "Counts the number of times the increase control has been operated. Writing a 0 resets the counter.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5542": {
             "title": "5542",
             "x-alt-title": "downCounter",
             "description": "Counts the times the decrease control has been operated. Writing a 0 resets the counter",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5532",
-          "5533",
-          "5541",
-          "5542",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "MultipleAxisJoystick": {
@@ -3005,47 +3656,58 @@
             "title": "5500",
             "x-alt-title": "digitalInputState",
             "description": "The current state of a digital input.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5501": {
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5702": {
             "title": "5702",
             "x-alt-title": "xValue",
             "description": "The measured value along the X axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5703": {
             "title": "5703",
             "x-alt-title": "yValue",
             "description": "The measured value along the Y axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5704": {
             "title": "5704",
             "x-alt-title": "zValue",
             "description": "The measured value along the Z axis.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5500",
-          "5501",
-          "5702",
-          "5703",
-          "5704",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Rate": {
@@ -3058,68 +3720,85 @@
             "title": "5601",
             "x-alt-title": "minMeasuredValue",
             "description": "The minimum value that can be measured by the sensor",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5602": {
             "title": "5602",
             "x-alt-title": "maxMeasuredValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5603": {
             "title": "5603",
             "x-alt-title": "minRangeValue",
             "description": "The minimum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5604": {
             "title": "5604",
             "x-alt-title": "maxRangeValue",
             "description": "The maximum value that can be measured by the sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5605": {
             "title": "5605",
             "x-alt-title": "resetMinAndMaxMeasuredValues",
             "description": "Reset the Min and Max Measured Values to Current Value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5700": {
             "title": "5700",
             "x-alt-title": "sensorValue",
             "description": "Last or Current Measured Value from the Sensor.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5701": {
             "title": "5701",
             "x-alt-title": "sensorUnits",
             "description": "If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5821": {
             "title": "5821",
             "x-alt-title": "currentCalibration",
             "description": "Read or Write the current calibration coefficient.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5601",
-          "5602",
-          "5603",
-          "5604",
-          "5605",
-          "5700",
-          "5701",
-          "5750",
-          "5821"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PushButton": {
@@ -3132,26 +3811,31 @@
             "title": "5500",
             "x-alt-title": "digitalInputState",
             "description": "The current state of a digital input.",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5501": {
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5500",
-          "5501",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "MultistateSelector": {
@@ -3164,19 +3848,22 @@
             "title": "5547",
             "x-alt-title": "multiStateInput",
             "description": "The current state of a Multi-state input or selector.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5547",
-          "5750"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Bitmap": {
@@ -3189,33 +3876,40 @@
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5910": {
             "title": "5910",
             "x-alt-title": "bitmapInput",
             "description": "Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5911": {
             "title": "5911",
             "x-alt-title": "bitmapInputReset",
             "description": "Reset the Bitmap Input value.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5912": {
             "title": "5912",
             "x-alt-title": "elementDescription",
             "description": "The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5750",
-          "5910",
-          "5911",
-          "5912"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "Stopwatch": {
@@ -3228,33 +3922,40 @@
             "title": "5501",
             "x-alt-title": "digitalInputCounter",
             "description": "The cumulative value of active state detected.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "5544": {
             "title": "5544",
             "x-alt-title": "cumulativeTime",
             "description": "The total time in seconds that the timer input is true. Writing a 0 resets the time.",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5750": {
             "title": "5750",
             "x-alt-title": "applicationType",
             "description": "The application type of the sensor or actuator as a string, for instance, “Air Pressure”.",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           },
           "5850": {
             "title": "5850",
             "x-alt-title": "onOff",
             "description": "This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off",
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true,
+            "readOnly": false,
+            "writeOnly": false
           }
         },
-        "required": [
-          "5501",
-          "5544",
-          "5750",
-          "5850"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PowerupLog": {
@@ -3267,40 +3968,49 @@
             "title": "1",
             "x-alt-title": "toolVersion",
             "description": "The tool version that the device supports - used to determine the logging object/resource version to be used for parsing ",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "2": {
             "title": "2",
             "x-alt-title": "imei",
             "description": "IMEI of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "3": {
             "title": "3",
             "x-alt-title": "imsi",
             "description": "IMSI of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "4": {
             "title": "4",
             "x-alt-title": "msisdn",
             "description": "MSISDN of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "10": {
             "title": "10",
             "x-alt-title": "deviceName",
             "description": "Human-readable name of the device ",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "10"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "PlmnSearchEvent": {
@@ -3313,26 +4023,31 @@
             "title": "6030",
             "x-alt-title": "plmnId",
             "description": "PLMN - mcc/mnc",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6031": {
             "title": "6031",
             "x-alt-title": "bandIndicator",
             "description": "Band indicator",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6032": {
             "title": "6032",
             "x-alt-title": "dlEarfcn",
             "description": "EARFCN - frequency",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "6030",
-          "6031",
-          "6032"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "ScellId": {
@@ -3345,33 +4060,40 @@
             "title": "2",
             "x-alt-title": "imei",
             "description": "IMEI of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6030": {
             "title": "6030",
             "x-alt-title": "plmnId",
             "description": "PLMN - mcc/mnc",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6031": {
             "title": "6031",
             "x-alt-title": "bandIndicator",
             "description": "Band indicator",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6033": {
             "title": "6033",
             "x-alt-title": "cellId",
             "description": "Cell Identity",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "2",
-          "6030",
-          "6031",
-          "6033"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "CellReselectionEvent": {
@@ -3384,33 +4106,40 @@
             "title": "2",
             "x-alt-title": "imei",
             "description": "IMEI of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "3": {
             "title": "3",
             "x-alt-title": "imsi",
             "description": "IMSI of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6032": {
             "title": "6032",
             "x-alt-title": "dlEarfcn",
             "description": "EARFCN - frequency",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6033": {
             "title": "6033",
             "x-alt-title": "cellId",
             "description": "Cell Identity",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "2",
-          "3",
-          "6032",
-          "6033"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "HandoverEvent": {
@@ -3423,33 +4152,40 @@
             "title": "3",
             "x-alt-title": "imsi",
             "description": "IMSI of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "4": {
             "title": "4",
             "x-alt-title": "msisdn",
             "description": "MSISDN of device",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6032": {
             "title": "6032",
             "x-alt-title": "dlEarfcn",
             "description": "EARFCN - frequency",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6033": {
             "title": "6033",
             "x-alt-title": "cellId",
             "description": "Cell Identity",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "3",
-          "4",
-          "6032",
-          "6033"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "RadioLinkFailureEvent": {
@@ -3462,12 +4198,13 @@
             "title": "1",
             "x-alt-title": "toolVersion",
             "description": "The tool version that the device supports - used to determine the logging object/resource version to be used for parsing ",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "1"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "RrcStateChangeEvent": {
@@ -3480,12 +4217,13 @@
             "title": "1",
             "x-alt-title": "toolVersion",
             "description": "The tool version that the device supports - used to determine the logging object/resource version to be used for parsing ",
-            "type": "string"
+            "type": "string",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "1"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "RrcTimerExpiryEvent": {
@@ -3507,19 +4245,22 @@
             "title": "6032",
             "x-alt-title": "dlEarfcn",
             "description": "EARFCN - frequency",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           },
           "6033": {
             "title": "6033",
             "x-alt-title": "cellId",
             "description": "Cell Identity",
-            "type": "number"
+            "type": "number",
+            "nullable": true,
+            "readOnly": true,
+            "writeOnly": false
           }
         },
-        "required": [
-          "6032",
-          "6033"
-        ],
+        "required": [],
         "additionalProperties": false
       },
       "OMAResources": {

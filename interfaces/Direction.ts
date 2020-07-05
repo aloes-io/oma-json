@@ -12,21 +12,21 @@ export interface Direction {
   /**
    * The minimum value that can be measured by the sensor
    */
-  "5601": number;
+  "5601"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5602": number;
+  "5602"?: number;
   /**
    * Reset the Min and Max Measured Values to Current Value.
    */
-  "5605": string;
+  "5605"?: string;
   /**
    * The compass direction.
    */
-  "5705": number;
+  "5705"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

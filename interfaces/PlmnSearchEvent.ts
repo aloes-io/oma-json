@@ -12,13 +12,13 @@ export interface PlmnSearchEvent {
   /**
    * PLMN - mcc/mnc
    */
-  "6030": number;
+  "6030"?: number;
   /**
    * Band indicator
    */
-  "6031": number;
+  "6031"?: number;
   /**
    * EARFCN - frequency
    */
-  "6032": number;
+  "6032"?: number;
 }

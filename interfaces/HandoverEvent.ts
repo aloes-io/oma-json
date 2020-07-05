@@ -12,17 +12,17 @@ export interface HandoverEvent {
   /**
    * IMSI of device
    */
-  "3": string;
+  "3"?: string;
   /**
    * MSISDN of device
    */
-  "4": string;
+  "4"?: string;
   /**
    * EARFCN - frequency
    */
-  "6032": number;
+  "6032"?: number;
   /**
    * Cell Identity
    */
-  "6033": number;
+  "6033"?: number;
 }

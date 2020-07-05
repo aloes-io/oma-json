@@ -12,23 +12,23 @@ export interface AudioClip {
   /**
    * Audio Clip that is playable (i.e. short audio recording indicating the floor in an elevator).
    */
-  "5522": {
+  "5522"?: {
     [k: string]: any;
   };
   /**
    * Trigger initiating actuation.
    */
-  "5523": string;
+  "5523"?: string;
   /**
    * The duration of the sound once trigger.
    */
-  "5524": number;
+  "5524"?: number;
   /**
    * Input/output level control, float value between 0 and 100 as a percentage.
    */
-  "5548": number;
+  "5548"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

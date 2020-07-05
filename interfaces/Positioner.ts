@@ -12,37 +12,37 @@ export interface Positioner {
   /**
    * The minimum value that can be measured by the sensor.
    */
-  "5519": number;
+  "5519"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5520": number;
+  "5520"?: number;
   /**
    * Current position or desired position of a positioner actuator.
    */
-  "5536": number;
+  "5536"?: number;
   /**
    * The time expected to move the actuator to the new position.
    */
-  "5537": number;
+  "5537"?: number;
   /**
    * The time remaining in an operation.
    */
-  "5538": number;
+  "5538"?: number;
   /**
    * The minimum value that can be measured by the sensor
    */
-  "5601": number;
+  "5601"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5602": number;
+  "5602"?: number;
   /**
    * Reset the Min and Max Measured Values to Current Value.
    */
-  "5605": string;
+  "5605"?: string;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

@@ -12,25 +12,25 @@ export interface Accelerometer {
   /**
    * The minimum value that can be measured by the sensor.
    */
-  "5603": number;
+  "5603"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5604": number;
+  "5604"?: number;
   /**
    * If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.
    */
-  "5701": string;
+  "5701"?: string;
   /**
    * The measured value along the X axis.
    */
-  "5702": number;
+  "5702"?: number;
   /**
    * The measured value along the Y axis.
    */
-  "5703": number;
+  "5703"?: number;
   /**
    * The measured value along the Z axis.
    */
-  "5704": number;
+  "5704"?: number;
 }

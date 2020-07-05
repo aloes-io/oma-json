@@ -12,17 +12,17 @@ export interface Bitmap {
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values.
    */
-  "5910": number;
+  "5910"?: number;
   /**
    * Reset the Bitmap Input value.
    */
-  "5911": string;
+  "5911"?: string;
   /**
    * The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit.
    */
-  "5912": string;
+  "5912"?: string;
 }

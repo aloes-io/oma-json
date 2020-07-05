@@ -12,29 +12,29 @@ export interface LoadControl {
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * The event identifier as a string.
    */
-  "5823": string;
+  "5823"?: string;
   /**
    * Time when the load control event will start started.
    */
-  "5824": number;
+  "5824"?: number;
   /**
    * The duration of the load control event.
    */
-  "5825": number;
+  "5825"?: number;
   /**
    * The criticality of the event.  The device receiving the event will react in an appropriate fashion for the device.
    */
-  "5826": number;
+  "5826"?: number;
   /**
    * Defines the maximum energy usage of the receivng device, as a percentage of the device's normal maximum energy usage.
    */
-  "5827": string;
+  "5827"?: string;
   /**
    * Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on.
    */
-  "5828": number;
+  "5828"?: number;
 }

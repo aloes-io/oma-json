@@ -12,17 +12,17 @@ export interface SetPoint {
   /**
    * If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.
    */
-  "5701": string;
+  "5701"?: string;
   /**
    * A string representing a value in some color space
    */
-  "5706": string;
+  "5706"?: string;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * The setpoint value.
    */
-  "5900": number;
+  "5900"?: number;
 }

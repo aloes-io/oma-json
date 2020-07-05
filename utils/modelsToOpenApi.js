@@ -16,6 +16,14 @@ const setType = {
   null: 'string',
 };
 
+const isReadOnly = (operations) => {
+  return operations === 'R';
+};
+
+const isWriteOnly = (operations) => {
+  return operations === 'W';
+};
+
 const resourcesModelsToOpenApi = (openApi) => {
   const schema = {
     title: 'OMAResources',
@@ -27,7 +35,6 @@ const resourcesModelsToOpenApi = (openApi) => {
   };
 
   omaResources.forEach(({name, value, description, type}) => {
-    // const propertyName = snakeCase(name);
     const propertyName = camelCase(name);
     const propertyTitle = `${value}`;
     schema.properties[propertyTitle] = {
@@ -57,19 +64,20 @@ const objectModelsToOpenApi = (openApi) => {
       if (resource) {
         const propertyName = camelCase(resource.name);
         const propertyTitle = `${resource.value}`;
-        // const propertyName = snakeCase(resource.name);
-        required.push(propertyTitle);
+        // required.push(propertyTitle);
         properties[propertyTitle] = {
           title: propertyTitle,
           ['x-alt-title']: propertyName,
           description: resource.description,
           type: setType[resource.type],
+          nullable: true,
+          readOnly: isReadOnly(resource.operations),
+          writeOnly: isWriteOnly(resource.operations),
         };
       }
     });
 
     const schemaName = startCase(camelCase(object.name)).replace(/ /g, '');
-    // const schemaName = camelCase(name);
     const schemaTitle = `${object.value}`;
 
     const schema = {
@@ -83,7 +91,6 @@ const objectModelsToOpenApi = (openApi) => {
     };
 
     openApi.components.schemas[schemaName] = schema;
-    // console.log('Schema', schema);
   });
 
   return openApi;
@@ -102,11 +109,12 @@ const main = async () => {
   const openApiDoc = await generateOpenApi();
 
   const validationResults = await validator(openApiDoc);
-  // console.log(JSON.stringify(validationResults, null, 2));
 
   if (!validationResults.errors || !validationResults.errors.length) {
     await removeFile(openApiFilePath);
     await writeFile(openApiFilePath, JSON.stringify(openApiDoc, null, 2));
+  } else {
+    console.log(JSON.stringify(validationResults.errors, null, 2));
   }
 };
 

@@ -12,17 +12,17 @@ export interface ScellId {
   /**
    * IMEI of device
    */
-  "2": string;
+  "2"?: string;
   /**
    * PLMN - mcc/mnc
    */
-  "6030": number;
+  "6030"?: number;
   /**
    * Band indicator
    */
-  "6031": number;
+  "6031"?: number;
   /**
    * Cell Identity
    */
-  "6033": number;
+  "6033"?: number;
 }

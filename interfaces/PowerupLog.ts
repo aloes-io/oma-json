@@ -12,21 +12,21 @@ export interface PowerupLog {
   /**
    * The tool version that the device supports - used to determine the logging object/resource version to be used for parsing
    */
-  "1": string;
+  "1"?: string;
   /**
    * IMEI of device
    */
-  "2": string;
+  "2"?: string;
   /**
    * IMSI of device
    */
-  "3": string;
+  "3"?: string;
   /**
    * MSISDN of device
    */
-  "4": string;
+  "4"?: string;
   /**
    * Human-readable name of the device
    */
-  "10": string;
+  "10"?: string;
 }

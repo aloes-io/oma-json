@@ -12,13 +12,13 @@ export interface DigitalOutput {
   /**
    * The current state of a digital output,  0=OFF, 1=ON..
    */
-  "5550": boolean;
+  "5550"?: boolean;
   /**
    * The polarity of a digital ouput as a Boolean (0 = Normal, 1= Reversed).
    */
-  "5551": boolean;
+  "5551"?: boolean;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

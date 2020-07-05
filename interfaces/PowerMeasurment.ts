@@ -12,73 +12,73 @@ export interface PowerMeasurment {
   /**
    * Reset the Min and Max Measured Values to Current Value.
    */
-  "5605": string;
+  "5605"?: string;
   /**
    * The current active power.
    */
-  "5800": number;
+  "5800"?: number;
   /**
    * The minimum active power measured by the sensor since it is ON.
    */
-  "5801": number;
+  "5801"?: number;
   /**
    * The maximum active power measured by the sensor since it is ON.
    */
-  "5802": number;
+  "5802"?: number;
   /**
    * The minimum active power that can be measured by the sensor.
    */
-  "5803": number;
+  "5803"?: number;
   /**
    * The maximum active power that can be measured by the sensor.
    */
-  "5804": number;
+  "5804"?: number;
   /**
    * The total power in Wh that the light has used.
    */
-  "5805": number;
+  "5805"?: number;
   /**
    * Request an active power calibration by writing the value of a calibrated load.
    */
-  "5806": number;
+  "5806"?: number;
   /**
    * The current reactive power.
    */
-  "5810": number;
+  "5810"?: number;
   /**
    * The minimum reactive power measured by the sensor since it is ON.
    */
-  "5811": number;
+  "5811"?: number;
   /**
    * The maximum reactive power measured by the sensor since it is ON.
    */
-  "5812": number;
+  "5812"?: number;
   /**
    * The minimum active power that can be measured by the sensor.
    */
-  "5813": number;
+  "5813"?: number;
   /**
    * The minimum active power that can be measured by the sensor.
    */
-  "5814": number;
+  "5814"?: number;
   /**
    * The cumulative reactive power since the last cumulative energy reset or device start.
    */
-  "5815": number;
+  "5815"?: number;
   /**
    * Request a reactive power calibration by writing the value of a calibrated load.
    */
-  "5816": number;
+  "5816"?: number;
   /**
    * The power factor of the actuactor.
    */
-  "5820": number;
+  "5820"?: number;
   /**
    * Read or Write the current calibration coefficient.
    */
-  "5821": number;
+  "5821"?: number;
   /**
    * Reset both cumulative active/reactive power.
    */
-  "5822": string;
+  "5822"?: string;
 }

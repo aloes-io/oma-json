@@ -12,21 +12,21 @@ export interface Actuation {
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off
    */
-  "5850": boolean;
+  "5850"?: boolean;
   /**
    * This resource represents dimmer setting, which has an Integer value between 0 and 100 as a percentage.
    */
-  "5851": number;
+  "5851"?: number;
   /**
    * The time in seconds that the device has been on. Writing a value of 0 resets the counter.
    */
-  "5852": number;
+  "5852"?: number;
   /**
    * A string describing a state for multiple level output such as Pilot Wire.
    */
-  "5853": string;
+  "5853"?: string;
 }

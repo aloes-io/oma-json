@@ -12,17 +12,17 @@ export interface AnalogOutput {
   /**
    * The minimum value that can be measured by the sensor.
    */
-  "5603": number;
+  "5603"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5604": number;
+  "5604"?: number;
   /**
    * The current state of the analogue output.
    */
-  "5650": number;
+  "5650"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

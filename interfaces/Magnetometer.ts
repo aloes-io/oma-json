@@ -12,21 +12,21 @@ export interface Magnetometer {
   /**
    * If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.
    */
-  "5701": string;
+  "5701"?: string;
   /**
    * The measured value along the X axis.
    */
-  "5702": number;
+  "5702"?: number;
   /**
    * The measured value along the Y axis.
    */
-  "5703": number;
+  "5703"?: number;
   /**
    * The measured value along the Z axis.
    */
-  "5704": number;
+  "5704"?: number;
   /**
    * The compass direction.
    */
-  "5705": number;
+  "5705"?: number;
 }

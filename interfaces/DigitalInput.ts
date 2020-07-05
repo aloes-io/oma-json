@@ -12,33 +12,33 @@ export interface DigitalInput {
   /**
    * The current state of a digital input.
    */
-  "5500": boolean;
+  "5500"?: boolean;
   /**
    * The cumulative value of active state detected.
    */
-  "5501": number;
+  "5501"?: number;
   /**
    * The polarity of the digital input as a Boolean (0 = Normal, 1= Reversed).
    */
-  "5502": boolean;
+  "5502"?: boolean;
   /**
    * The debounce period in ms.
    */
-  "5503": number;
+  "5503"?: number;
   /**
    * The edge selection as an integer (1 = Falling edge, 2 = Rising edge, 3 = Both Rising and Falling edge).
    */
-  "5504": number;
+  "5504"?: number;
   /**
    * Reset the Counter value.
    */
-  "5505": string;
+  "5505"?: string;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * The type of the sensor (for instance PIR type).
    */
-  "5751": string;
+  "5751"?: string;
 }

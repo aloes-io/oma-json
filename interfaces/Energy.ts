@@ -12,17 +12,17 @@ export interface Energy {
   /**
    * If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.
    */
-  "5701": string;
+  "5701"?: string;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * The total power in Wh that the light has used.
    */
-  "5805": number;
+  "5805"?: number;
   /**
    * Reset both cumulative active/reactive power.
    */
-  "5822": string;
+  "5822"?: string;
 }

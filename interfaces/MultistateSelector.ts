@@ -12,9 +12,9 @@ export interface MultistateSelector {
   /**
    * The current state of a Multi-state input or selector.
    */
-  "5547": number;
+  "5547"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

@@ -12,25 +12,25 @@ export interface MultipleAxisJoystick {
   /**
    * The current state of a digital input.
    */
-  "5500": boolean;
+  "5500"?: boolean;
   /**
    * The cumulative value of active state detected.
    */
-  "5501": number;
+  "5501"?: number;
   /**
    * The measured value along the X axis.
    */
-  "5702": number;
+  "5702"?: number;
   /**
    * The measured value along the Y axis.
    */
-  "5703": number;
+  "5703"?: number;
   /**
    * The measured value along the Z axis.
    */
-  "5704": number;
+  "5704"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

@@ -12,13 +12,13 @@ export interface Time {
   /**
    * Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone.
    */
-  "5506": string;
+  "5506"?: string;
   /**
    * For shorter times of a fraction of a second (i.e. 0.23).
    */
-  "5507": number;
+  "5507"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

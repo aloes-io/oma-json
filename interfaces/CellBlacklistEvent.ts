@@ -12,9 +12,9 @@ export interface CellBlacklistEvent {
   /**
    * EARFCN - frequency
    */
-  "6032": number;
+  "6032"?: number;
   /**
    * Cell Identity
    */
-  "6033": number;
+  "6033"?: number;
 }

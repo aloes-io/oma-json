@@ -12,21 +12,21 @@ export interface Buzzer {
   /**
    * The duration of the time delay.
    */
-  "5521": number;
+  "5521"?: number;
   /**
    * The off time when On/Off control remains on.
    */
-  "5525": number;
+  "5525"?: number;
   /**
    * Input/output level control, float value between 0 and 100 as a percentage.
    */
-  "5548": number;
+  "5548"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off
    */
-  "5850": boolean;
+  "5850"?: boolean;
 }

@@ -12,37 +12,37 @@ export interface Conductivity {
   /**
    * The minimum value that can be measured by the sensor
    */
-  "5601": number;
+  "5601"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5602": number;
+  "5602"?: number;
   /**
    * The minimum value that can be measured by the sensor.
    */
-  "5603": number;
+  "5603"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5604": number;
+  "5604"?: number;
   /**
    * Reset the Min and Max Measured Values to Current Value.
    */
-  "5605": string;
+  "5605"?: string;
   /**
    * Last or Current Measured Value from the Sensor.
    */
-  "5700": number;
+  "5700"?: number;
   /**
    * If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.
    */
-  "5701": string;
+  "5701"?: string;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * Read or Write the current calibration coefficient.
    */
-  "5821": number;
+  "5821"?: number;
 }

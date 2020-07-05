@@ -12,17 +12,17 @@ export interface Stopwatch {
   /**
    * The cumulative value of active state detected.
    */
-  "5501": number;
+  "5501"?: number;
   /**
    * The total time in seconds that the timer input is true. Writing a 0 resets the time.
    */
-  "5544": number;
+  "5544"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off
    */
-  "5850": boolean;
+  "5850"?: boolean;
 }

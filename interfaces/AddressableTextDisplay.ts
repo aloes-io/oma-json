@@ -12,41 +12,41 @@ export interface AddressableTextDisplay {
   /**
    * A string of text.
    */
-  "5527": string;
+  "5527"?: string;
   /**
    * X Coordinate.
    */
-  "5528": number;
+  "5528"?: number;
   /**
    * Y Coordinate.
    */
-  "5529": number;
+  "5529"?: number;
   /**
    * Command to clear the display.
    */
-  "5530": string;
+  "5530"?: string;
   /**
    * Proportional control, integer value between 0 and 100 as a percentage.
    */
-  "5531": number;
+  "5531"?: number;
   /**
    * The highest X coordinate the display supports before wrapping to the next line.
    */
-  "5545": number;
+  "5545"?: number;
   /**
    * The highest Y coordinate the display supports before wrapping to the next line.
    */
-  "5546": number;
+  "5546"?: number;
   /**
    * Input/output level control, float value between 0 and 100 as a percentage.
    */
-  "5548": number;
+  "5548"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
   /**
    * This resource represents a power source, which can be controlled, the setting of which is a Boolean value (1,0) where 1 is on and 0 is off
    */
-  "5850": boolean;
+  "5850"?: boolean;
 }

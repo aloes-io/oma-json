@@ -12,57 +12,57 @@ export interface Gyrometer {
   /**
    * The minimum measured value along the X axis.
    */
-  "5508": number;
+  "5508"?: number;
   /**
    * The maximum measured value along the X axis.
    */
-  "5509": number;
+  "5509"?: number;
   /**
    * The minimum measured value along the Y axis.
    */
-  "5510": number;
+  "5510"?: number;
   /**
    * The maximum measured value along the Y axis.
    */
-  "5511": number;
+  "5511"?: number;
   /**
    * The minimum measured value along the Z axis.
    */
-  "5512": number;
+  "5512"?: number;
   /**
    * The maximum measured value along the Z axis.
    */
-  "5513": number;
+  "5513"?: number;
   /**
    * The minimum value that can be measured by the sensor.
    */
-  "5603": number;
+  "5603"?: number;
   /**
    * The maximum value that can be measured by the sensor.
    */
-  "5604": number;
+  "5604"?: number;
   /**
    * Reset the Min and Max Measured Values to Current Value.
    */
-  "5605": string;
+  "5605"?: string;
   /**
    * If present, the type of sensor defined as the UCUM Unit Definition e.g. “Cel” for Temperature in Celcius.
    */
-  "5701": string;
+  "5701"?: string;
   /**
    * The measured value along the X axis.
    */
-  "5702": number;
+  "5702"?: number;
   /**
    * The measured value along the Y axis.
    */
-  "5703": number;
+  "5703"?: number;
   /**
    * The measured value along the Z axis.
    */
-  "5704": number;
+  "5704"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

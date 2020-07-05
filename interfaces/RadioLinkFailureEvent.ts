@@ -12,5 +12,5 @@ export interface RadioLinkFailureEvent {
   /**
    * The tool version that the device supports - used to determine the logging object/resource version to be used for parsing
    */
-  "1": string;
+  "1"?: string;
 }

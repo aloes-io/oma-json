@@ -12,21 +12,21 @@ export interface UpDownControl {
   /**
    * Indicates an increase control action.
    */
-  "5532": boolean;
+  "5532"?: boolean;
   /**
    * Indicates an decrease control action.
    */
-  "5533": boolean;
+  "5533"?: boolean;
   /**
    * Counts the number of times the increase control has been operated. Writing a 0 resets the counter.
    */
-  "5541": number;
+  "5541"?: number;
   /**
    * Counts the times the decrease control has been operated. Writing a 0 resets the counter
    */
-  "5542": number;
+  "5542"?: number;
   /**
    * The application type of the sensor or actuator as a string, for instance, “Air Pressure”.
    */
-  "5750": string;
+  "5750"?: string;
 }

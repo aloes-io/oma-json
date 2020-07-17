@@ -44,7 +44,7 @@
     "eslint": "^7.0.0",
     "ibm-openapi-validator": "^0.26.1",
     "json-schema-to-typescript": "^8.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "pre-commit": "^1.2.2",
     "prettier": "2.0.4"
   },
